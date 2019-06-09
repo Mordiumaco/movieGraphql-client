@@ -3,15 +3,27 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "apollo-boost": "^0.4.2",
+    "graphql": "^14.3.1",
+    "graphql-tag": "^2.10.1",
+    "prop-types": "^15.7.2",
     "react": "^16.8.6",
+    "react-apollo": "^2.5.6",
+    "react-apollo-hooks": "^0.4.5",
     "react-dom": "^16.8.6",
-    "react-scripts": "3.0.1"
+    "react-helmet": "^5.2.1",
+    "react-router-dom": "^5.0.1",
+    "react-scripts": "3.0.1",
+    "styled-components": "^4.3.1",
+    "styled-reset": "^2.0.15"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages -d build",
+    "predeploy": "yarn run build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -27,5 +39,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^2.0.1"
   }
 }
