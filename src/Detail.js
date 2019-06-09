@@ -71,7 +71,7 @@ const Detail = ({
               <Paragraph>{movie.description_intro}</Paragraph>
             </span>
           </Container>
-          <Title>Suggested</Title>
+          <Title>Suggested about other movies</Title>
           <MovieContainer>
             {suggestions.map(movie => (
               <Movie
